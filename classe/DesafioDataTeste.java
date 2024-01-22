@@ -6,13 +6,17 @@ public class DesafioDataTeste {
 
 		// CRIANDO MÉTODOS (INSTÂNCIAS)
 		DesafioData calend = new DesafioData();
-		calend.dia = 23;
-		calend.mes = 10;
-		calend.ano = 1986;
+		//calend.dia = 23;
+		// calend.mes = 10;
+		// calend.ano = 1986;
+
+		var calend1 = new DesafioData(23, 10, 1986);
 
 		String dataFormatada = calend.obterDataFormatada();
-		System.out.println(calend.obterDataFormatada());
-		System.out.printf("Meu aniversário é:" + dataFormatada);
+		System.out.println(dataFormatada);
+		System.out.printf("Meu aniversário é: " + calend1.obterDataFormatada());
+		// System.out.println(calend1.obterDataFormatada());
+
 	}
 
 }
