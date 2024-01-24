@@ -1,4 +1,4 @@
- package classe;
+package classe;
 
 public class DesafioData {
 
@@ -9,21 +9,29 @@ public class DesafioData {
 
 	// CRIANDO CONSTRUTORES
 	DesafioData() {
-		dia = 1;
-		mes = 1;
-		ano = 1970;
+		// dia = 1;
+		// mes = 1;
+		// ano = 1970;
+		this(1, 1, 1970);
 
 	}
 
-	DesafioData(int diaInicial, int mesInicial, int anoInicial) {
-		dia = diaInicial;
-		mes = mesInicial;
-		ano = anoInicial;
+	/**
+	 * DesafioData(int diaInicial, int mesInicial, int anoInicial) { dia =
+	 * diaInicial; mes = mesInicial; ano = anoInicial;
+	 * 
+	 * }
+	 */
+
+	DesafioData(int dia, int mes, int ano) {
+		this.dia = dia; 
+		this.mes = mes;
+		this.ano = ano;
 
 	}
 
 	String obterDataFormatada() {
-		return String.format("%d/%s/%d", dia, mes, ano);
+		return String.format("%d/%s/%d", this.dia, mes, ano);
 	}
 
 }
