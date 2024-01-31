@@ -7,6 +7,10 @@ public class Usuario {
 	Usuario(String nome){
 		this.nome = nome;
 	}
+	
+	public String toString() {
+		return "Meu nome é " + this.nome + ".";
+	}
 
 	@Override
 	public int hashCode() {
